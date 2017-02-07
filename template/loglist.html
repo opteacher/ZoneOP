@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>日志列表</title>
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">空间</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">个人</a></li>
+						<li><a href="#">主页</a></li>
+						<li><a href="#">好友</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">#User Name#</a></li>
+						<li><a href="#"><img class="nav-img-lnk" src="assets/img/setting.png" alt="设置"></a></li>
+						<li><a href="#"><img class="nav-img-lnk" src="assets/img/logout.png" alt="退出"></a></li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input class="form-control search-ipt" type="text" class="form-control" placeholder="用户/动态">
+							<a href="#"><img class="search-btn" src="assets/img/search.png"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container" style="margin-top:70px;">
+			<div class="row">
+				<div class="col-md-2 pfl">
+					<a href="#" class="thumbnail">
+						<img data-src="holder.js/100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjU5IiB5PSI5MCIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE3MXgxODA8L3RleHQ+PC9nPjwvc3ZnPg==" alt="头像">
+					</a>
+				</div>
+				<div class="col-md-8 hgt-180px">
+					<h1 style="color: white;">#User Name#</h1>
+					<ol class="breadcrumb loc-path">
+						<li><a href="main.html">主页</a></li>
+						<li class="active">日志</li>
+					</ol>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="nav nav-pills nav-stacked nav-sdr-lst" role="tablist">
+						<li role="presentation"><a href="main.html">主页</a></li>
+						<li role="presentation" class="active"><a href="loglist.html">日志</a></li>
+						<li role="presentation"><a href="gallery.html">相册</a></li>
+						<li role="presentation"><a href="#">音乐</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<div class="log-blk">
+						<button class="btn btn-primary" type="button">新建日志</button>
+					</div>
+					<div class="log-blk">
+						<h2>
+							标题1
+							<div class="btn-group" style="float:right">
+								<button type="button" class="btn btn-default">
+									<img class="icn-20" src="assets/img/edit.png">
+								</button>
+								<button type="button" class="btn btn-default" data-toggle="modal" data-target=".del-dry-cfm-dlg">
+									<img class="icn-20" src="assets/img/delete.png">
+								</button>
+							</div>
+							<span class="blog-post-meta" style="margin-right: 10px; height: 35px; line-height: 35px;">2016年10月14日</span>
+						</h2>
+						<hr>
+						<h2>
+							标题1
+							<div class="btn-group" style="float:right">
+								<button type="button" class="btn btn-default">
+									<img class="icn-20" src="assets/img/edit.png">
+								</button>
+								<button type="button" class="btn btn-default" data-toggle="modal" data-target=".del-dry-cfm-dlg">
+									<img class="icn-20" src="assets/img/delete.png">
+								</button>
+							</div>
+							<span class="blog-post-meta" style="margin-right: 10px; height: 35px; line-height: 35px;">2016年10月14日</span>
+						</h2>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html>

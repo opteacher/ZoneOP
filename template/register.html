@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>注册</title>
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/register.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="bkgd-img"></div>
+		<div class="container">
+			<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div class="lgn-blk"></div>
+				<div class="lgn-blk-edge"></div>
+				<div class="lgn_pnl">
+					<form>
+						<h2 class="text-center"><b>注&nbsp;册</b></h2>
+						<br>
+						<input type="text" class="form-control form-input" placeholder="用户名" required autofocus>
+						<input type="password" class="form-control form-input" placeholder="密码" required>
+						<input type="password" class="form-control form-input" placeholder="重复密码" required>
+						<input type="text" class="form-control form-input" placeholder="管理员码（可以留空）">
+						<button type="submit" class="btn btn-lg btn-primary btn-block form-input">注册</button>
+						<div class="text-center"><a href="login.html">已有账户，直接登陆</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			window.onload = function()
+			{
+				$(".bkgd-img").css("width", $(document).width());
+				$(".bkgd-img").css("height", $(document).height());
+			}
+			window.onresize = function()
+			{
+				$(".bkgd-img").css("width", $(document).width());
+				$(".bkgd-img").css("height", $(document).height());
+			}
+		</script>
+	</body>
+</html>
